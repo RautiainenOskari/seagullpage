@@ -49,6 +49,7 @@ function SightingList() {
       sortable: true,
       filter: true,
       headerName: "Location Name",
+      wrapText: true ,
     },
     {
       field: "howMany",
@@ -81,8 +82,7 @@ function SightingList() {
   };
 
   const autoSizeStrategy = {
-    type: "fit-viewport",
-    maxWidth: 200,
+    type: "fit-container"
   };
 
   return (

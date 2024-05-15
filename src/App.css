@@ -172,17 +172,19 @@ h1 {
 
 .content-container {
   max-width: 100%;
-  min-height: 100vw;
+  min-height: 100%;
   padding: 0 1rem; /* Adjust the horizontal padding as needed */
   box-sizing: border-box; /* Include padding in the total width */
 }
 
 .ag-theme-material {
   height: 80vw;
-  width: 60vw;
+  width: 70vw;
   margin: 0 auto;
   
 }
+
+
 /* Add media queries for smaller screens */
 @media (max-width: 768px) {
   .banner {
