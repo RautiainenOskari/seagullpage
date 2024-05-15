@@ -21,7 +21,7 @@ function Lokki() {
             <img src="/images/gull2.jpg" alt="Image 2" />
             <p>Some seagull species have a mutualistic relationship with other animals;
               they lead them to food sources while benefiting from the partnership themselves
-          </p>
+            </p>
           </div>
         </div>
         <div className="lokki-item">
@@ -34,8 +34,8 @@ function Lokki() {
             <img src="/images/gull4.jpg" alt="Image 4" />
           </div>
           <div className="lokki-text">
-          <p>Seagulls sometimes cooperate with each other, like warn each others of danger or attack a threat as a group.
-          </p>
+            <p>Seagulls sometimes cooperate with each other, like warn each others of danger or attack a threat as a group.
+            </p>
 
           </div>
         </div>
@@ -44,9 +44,9 @@ function Lokki() {
             <img src="/images/gull5.jpg" alt="Image 1" />
           </div>
           <div className="lokki-text">
-          <p>A lot of places look down on feeding seagulls, since they are often looked at as annoying
-            pests, but you should feed them anyway because they are a bunch of cool little guys!
-          </p>
+            <p>A lot of places look down on feeding seagulls, since they are often looked at as annoying
+              pests, but you should feed them anyway because they are a bunch of cool little guys!
+            </p>
 
           </div>
         </div>

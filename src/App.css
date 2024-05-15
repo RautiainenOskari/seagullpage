@@ -48,13 +48,12 @@
 .container {
   display: flex;
   flex-direction: row;
-  
 }
 
 .banner {
   width: 100vw;
   height: 10vw;
-  background-image: url('/images/seagullbanner.jpg');
+  background-image: url("/images/seagullbanner.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -173,12 +172,17 @@ h1 {
 
 .content-container {
   max-width: 100%;
-  min-height: 100%;
+  min-height: 100vw;
   padding: 0 1rem; /* Adjust the horizontal padding as needed */
   box-sizing: border-box; /* Include padding in the total width */
-
 }
 
+.ag-theme-material {
+  height: 80vw;
+  width: 60vw;
+  margin: 0 auto;
+  
+}
 /* Add media queries for smaller screens */
 @media (max-width: 768px) {
   .banner {
@@ -193,9 +197,24 @@ h1 {
   .lokki-item {
     max-width: 100%; /* Make lokki items take full width on smaller screens */
   }
-  .ag-theme-material {
-    max-height: 200vw;
+  .ag-theme-material .ag-root-wrapper {
+    height: 150vw !important;
+    max-width: 85vw;
+    padding: 0rem 0rem;
+    
   }
+}
+
+  @media (max-width: 400px) {
+    .ag-theme-material .ag-root-wrapper {
+      height: 125vw !important;
+      max-width: 85vw;
+      padding: 0rem 0rem;
+      
+    }
+
+  
+
 }
 
 .login-form {
@@ -222,3 +241,4 @@ h1 {
   height: auto;
   padding: 0 2;
 }
+
