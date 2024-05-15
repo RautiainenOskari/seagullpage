@@ -3,16 +3,16 @@ function Info() {
     return(
         <div>
             <h2>About</h2>
-            <p>The seagull sighting data is gotten from eBird API 2.0, which is based on eBird.org.
+            <p>The seagull sighting data is gotten from <a href="https://documenter.getpostman.com/view/664302/S1ENwy59#intro">
+            eBird API 2.0
+        </a>, which is based on eBird.org.
             <br />
-            The images are from royalty free sites like Pixabay.com.
+            Some of the seagull facts are gotten from <a href="https://www.surfertoday.com/">surfertoday.com</a>
                 <br />
-                <br />
-        <a href="https://documenter.getpostman.com/view/664302/S1ENwy59#intro">
-          Bird API
-        </a>
-        <br />
-        <a href="https://ebird.org/">https://ebird.org/</a>
+                The images are from royalty free sites like Pixabay.com.
+                <br/>
+                <br/>
+                <b>To access the secret seagull video, use the email "seagullfan@seamail.com" and the password "seagullsarecool"</b>
             </p>
         </div>
     )

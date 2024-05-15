@@ -53,22 +53,93 @@
 
 .banner {
   width: 100vw;
-  height: 10vw; /* Adjust the height as needed */
-  background-image: url('/src/assets/seagullbanner.jpg'); /* Replace with the path to your image */
+  height: 10vw;
+  background-image: url('/images/seagullbanner.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .banner-content {
-  color: white; /* Adjust the text color as needed */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add a text shadow for better visibility */
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 1rem;
 }
+
+.banner-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.banner-content p {
+  font-size: 1.2rem;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .banner {
+    height: 20vw;
+  }
+
+  .banner-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .banner-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 480px) {
+  .banner-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .banner-content p {
+    font-size: 0.8rem;
+  }
+}
+
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  overflow-x: auto; /* Add horizontal scrolling if the tabs overflow */
+  -webkit-overflow-scrolling: touch; /* Improve scrolling experience on iOS devices */
+}
+
 .tabs {
-  padding-top: 1rem; /* Add padding above the tabs */
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap; /* Prevent tabs from wrapping */
+}
+
+.tabs button {
+  margin-right: 0.5rem;
+  white-space: nowrap; /* Prevent tabs from wrapping */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .tabs-container {
+    padding-top: 0.5rem; /* Reduce top padding on smaller screens */
+  }
+
+  .tabs button {
+    margin-right: 0.25rem; /* Reduce spacing between tabs */
+    padding: 0.5rem; /* Adjust padding of tab buttons */
+    font-size: 0.8rem; /* Reduce font size of tab buttons */
+  }
 }
 
 h1 {
@@ -98,4 +169,50 @@ h1 {
   margin-top: 1rem;
   font-size: 0.9rem; /* Adjust the font size as needed */
   line-height: 1.4; /* Adjust the line height for better readability */
+}
+
+.content-container {
+  max-width: 100%;
+  min-height: 100%;
+  padding: 0 1rem; /* Adjust the horizontal padding as needed */
+  box-sizing: border-box; /* Include padding in the total width */
+
+}
+
+/* Add media queries for smaller screens */
+@media (max-width: 768px) {
+  .banner {
+    height: 20vw; /* Increase the height of the banner on smaller screens */
+  }
+
+  .lokki-container {
+    gap: 1rem; /* Reduce the gap between lokki items */
+    padding: 1rem; /* Reduce the padding */
+  }
+
+  .lokki-item {
+    max-width: 100%; /* Make lokki items take full width on smaller screens */
+  }
+  .ag-theme-material {
+    max-height: 200vw;
+  }
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.login-form iframe {
+  max-width: 100%;
+  max-height: 60vh; /* Adjust the maximum height as needed */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 480px) {
+  .login-form iframe {
+    max-height: 40vh; /* Further reduce the maximum height on very small screens */
+  }
 }

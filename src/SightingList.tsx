@@ -36,16 +36,20 @@ function SightingList() {
   };
 
   const autoSizeStrategy = {
-    type: 'fitCellContents'
+    type: 'fitCellContents',
+    maxWidth: 200,
 };
 
   return (
     <>
     <h2>Recent seagull sightings</h2>
-        <div className="ag-theme-material" style={{ height: "900px", width: "1200px",  }}>
-        <AgGridReact autoSizeStrategy={autoSizeStrategy}
+        <div className="ag-theme-material" style={{ height: "100vw", width: "100vw",  }}>
+        
+        {/* @ts-ignore */}
+        <AgGridReact 
+          autoSizeStrategy={autoSizeStrategy }
           rowData={sightings}
-          columnDefs={columnDefs}
+          columnDefs={columnDefs} 
           pagination={true}
           paginationAutoPageSize={true}
         />
