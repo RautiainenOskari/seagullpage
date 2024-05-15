@@ -2,7 +2,8 @@ import './App.css'
 function Info() {
     return(
         <div>
-            <h2>About</h2>
+            <h2>About </h2>
+            <img className='icon' src="/images/icon.png" alt="icon" />
             <p>The seagull sighting data is gotten from <a href="https://documenter.getpostman.com/view/664302/S1ENwy59#intro">
             eBird API 2.0
         </a>, which is based on eBird.org.

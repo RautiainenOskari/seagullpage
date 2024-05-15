@@ -216,3 +216,9 @@ h1 {
     max-height: 40vh; /* Further reduce the maximum height on very small screens */
   }
 }
+
+.icon {
+  width: 10%;
+  height: auto;
+  padding: 0 2;
+}
