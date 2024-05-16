@@ -82,7 +82,7 @@ function SightingList() {
   };
 
   const autoSizeStrategy = {
-    type: "fit-container"
+    type: "sizeColumnsToFit"
   };
 
   return (

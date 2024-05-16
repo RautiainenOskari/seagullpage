@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 0;
   text-align: center;
+  
 }
 
 .logo {
@@ -53,7 +54,7 @@
 .banner {
   width: 100vw;
   height: 10vw;
-  background-image: url("/images/seagullbanner.jpg");
+  background-image: url("/seagullpage/images/seagullbanner.jpg");
   background-size: cover;
   background-position: center;
   display: flex;

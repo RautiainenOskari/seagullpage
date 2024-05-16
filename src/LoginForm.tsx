@@ -20,7 +20,7 @@ function LoginForm() {
       setIsLoggedIn(true);
       setLoginError(null);
     } catch (error) {
-      setLoginError("Authentication failed. Please check your email and password.");
+      setLoginError("Wrong! Try checking the about page for the correct credentials.");
     }
   };
 

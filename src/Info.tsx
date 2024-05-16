@@ -3,18 +3,16 @@ function Info() {
     return (
         <div>
             <h2>About </h2>
-            <img className="icon" src="/images/icon.png" alt="icon" />
+            <img className="icon" src="/seagullpage/images/icon.png" alt="icon" />
             <p>
-                The seagull sighting data is gotten from
-                <a href="https://documenter.getpostman.com/view/664302/S1ENwy59#intro">
+                The seagull sighting data is gotten from <a href="https://documenter.getpostman.com/view/664302/S1ENwy59#intro">
                     eBird API 2.0
                 </a>
                 , which is based on <a href="https://ebird.org/home">
                     eBird.org.
                 </a>
                 <br />
-                Some of the seagull facts are gotten from
-                <a href="https://www.surfertoday.com/">surfertoday.com</a>
+                Some of the seagull facts are gotten from <a href="https://www.surfertoday.com/">surfertoday.com</a>
                 <br />
                 The images are from royalty free sites like Pixabay.com.
                 <br />
