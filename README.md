@@ -1,30 +1,12 @@
-# React + TypeScript + Vite
+<b>Harjoitystyö testausraportti - Seagull Fan Page - Oskari Rautiainen</b>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Responsiivisuus
+Sivu toimii parhaiten suurimmilla ruuduilla, noin 800px x 720px ylöspäin. Mobiilipuhelinten ja tablettien kokoisella ruuduilla 
+(Kuten Iphone 12, Pixel 7, Ipad mallit ja Oneplus 7) sivu toimii suurimmilta osin moitteetta, kuvat ja teksti skaalautuvat ja asettuvat oikein. Local Sighting listin kanssaon eniten ongelmia, kun sitä selaa pienemmillä ruuduilla, osa käyttöliittymästä jää hieman päällekkäin ja horizontalinen scrollaus on vähän kömpelöä riipuen ruudun leveydestä. Lista on silti käytettävä, mutta vaatisi hiomista.
 
-Currently, two official plugins are available:
+- Selaimet
+Sivua on eniten testattu Google Chromella (Versio 124.0), joka on toimii suurimmilta osin moitteeta. Huomioitavaa on että jos on asettanut omalle salaimelleen tai tietokoneellen dark moden päälle, osa sivustosta myös muuttuu pimeäksi, mikä ei tee siitä käyttökelvottomaa mutta ei kuitenkaan toimi toivotusti. Tämä saattaa olla korjattu harjoitustyön palautuksen hetkellä, jos minulla on siihen aikaa.
+Sivua on testattu myös Microsoft Edgen ja Mozilla Firefoxin uusimilla versioilla, ilman mitään huomattavia ongelmia tai erilaisuuksia toiminnassa.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Sivun latautumisaika
+Sivun latautumisaika päätyy noin 3-4 sekunttiin (Testauksessa käytin Google Chrome "Page Load Time" laajennusta). Eniten aikaa menee etusivun kuvien lataukseen, jota latautuvat huomattavasti muuta sivua hitaammin. Olen yrittänyt lieventää tätä kuvien kompressoimisella. Kuvien latautuminen on paljaalla silmällä huomattava, mutta silti sivun lautuminen on suhteellisen nopeaa. Bird API 2.0 tietojen lataamisella voi joskus mennä hetki, mutta suurimmalta osalta tiedot latautuvat hyväksyttävän nopeasti. Jos jatkokehittäisin sivustoa, haluaisin lisätä jonkinlaisen latausindikaattorin sighting listille.
