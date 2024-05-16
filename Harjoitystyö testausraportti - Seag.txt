@@ -1,0 +1,12 @@
+Harjoitystyö testausraportti - Seagull Fan Page - Oskari Rautiainen
+
+- Responsiivisuus
+Sivu toimii parhaiten suurimmilla ruuduilla, noin 800px x 720px ylöspäin. Mobiilipuhelinten ja tablettien kokoisella ruuduilla 
+(Kuten Iphone 12, Pixel 7, Ipad mallit ja Oneplus 7) sivu toimii suurimmilta osin moitteetta, kuvat ja teksti skaalautuvat ja asettuvat oikein. Local Sighting listin kanssaon eniten ongelmia, kun sitä selaa pienemmillä ruuduilla, osa käyttöliittymästä jää hieman päällekkäin ja horizontalinen scrollaus on vähän kömpelöä riipuen ruudun leveydestä. Lista on silti käytettävä, mutta vaatisi hiomista.
+
+- Selaimet
+Sivua on eniten testattu Google Chromella (Versio 124.0), joka on toimii suurimmilta osin moitteeta. Huomioitavaa on että jos on asettanut omalle salaimelleen tai tietokoneellen dark moden päälle, osa sivustosta myös muuttuu pimeäksi, mikä ei tee siitä käyttökelvottomaa mutta ei kuitenkaan toimi toivotusti. Tämä saattaa olla korjattu harjoitustyön palautuksen hetkellä, jos minulla on siihen aikaa.
+Sivua on testattu myös Microsoft Edgen ja Mozilla Firefoxin uusimilla versioilla, ilman mitään huomattavia ongelmia tai erilaisuuksia toiminnassa.
+
+-Sivun latautumisaika
+Sivun latautumisaika päätyy noin 3-4 sekunttiin (Testauksessa käytin Google Chrome "Page Load Time" laajennusta). Eniten aikaa menee etusivun kuvien lataukseen, jota latautuvat huomattavasti muuta sivua hitaammin. Olen yrittänyt lieventää tätä kuvien kompressoimisella. Kuvien latautuminen on paljaalla silmällä huomattava, mutta silti sivun lautuminen on suhteellisen nopeaa. Bird API 2.0 tietojen lataamisella voi joskus mennä hetki, mutta suurimmalta osalta tiedot latautuvat hyväksyttävän nopeasti. Jos jatkokehittäisin sivustoa, haluaisin lisätä jonkinlaisen latausindikaattorin sighting listille.
