@@ -182,7 +182,23 @@ h1 {
   height: 80vw;
   width: 70vw;
   margin: 0 auto;
+
   
+}
+
+.ag-header-cell-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  font-weight: bold;
+}
+
+.ag-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #555;
 }
 
 
@@ -243,5 +259,36 @@ h1 {
   width: 10%;
   height: auto;
   padding: 0 2;
+}
+
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  appearance: none; /* Remove default arrow */
+  -webkit-appearance: none; /* Remove default arrow for Safari */
+  -moz-appearance: none; /* Remove default arrow for Firefox */
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="gray"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+}
+
+select:focus {
+  outline: none;
+  border-color: #66afe9;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+/* Container for dropdowns */
+.dropdown-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
 }
 

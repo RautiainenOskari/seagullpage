@@ -17,7 +17,6 @@ function SightingList() {
     { name: "Finland", code: "FI" },
     { name: "Spain", code: "ES" },
     { name: "Sweden", code: "SE" },
-    { name: "United Kingdom", code: "UK" },
     { name: "United States", code: "US" },
   ];
 
@@ -50,6 +49,7 @@ function SightingList() {
       filter: true,
       headerName: "Location Name",
       wrapText: true ,
+      resizable: true
     },
     {
       field: "howMany",
@@ -82,8 +82,16 @@ function SightingList() {
   };
 
   const autoSizeStrategy = {
-    type: "sizeColumnsToFit"
+    type: 'fitGridWidth',
+        defaultMinWidth: 100,
+        columnLimits: [
+            {
+                colId: 'locName',
+            }
+        ]
   };
+
+  
 
   return (
     <>
